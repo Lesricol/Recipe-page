@@ -4,6 +4,7 @@
 img {
   display: block;
   max-width: 100%;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -18,6 +19,21 @@ body {
 .header-info,
 .main {
   margin: 32px;
+}
+@media screen and (width >= 700px) {
+  .header,
+.main {
+  margin: 40px;
+}
+.header-info{
+  margin: 40px 0;
+}
+}
+
+@media screen and (width >= 600) {
+  .img{
+    border-radius: 12px;
+  }
 }
 .main-title,
 .main-subtitle {
@@ -37,6 +53,13 @@ body {
   margin-bottom: 32px;
 }
 
+@media screen and (width >= 600px) {
+  .card-preparation {
+    width: 100%;
+    height: 180px;
+  }
+}
+
 .title {
   color: #7a284e;
   margin-bottom: 16px;
@@ -47,13 +70,24 @@ body {
   margin-top: 0;
   color: #7a284e;
 }
+
+.instructions, .ingredients{
+margin-bottom: 32px;
+}
+
 .list-preparation {
   margin-bottom: 8px;
   padding-right: 72px;
 }
 
+.list-instructions, .ingredients{
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E3DDD7;
+}
+
 .list {
   padding-left: 16px;
+  margin: 0;
 }
 
 .list ::marker {
@@ -71,5 +105,20 @@ body {
   margin-left: 0;
 }
 .margin-right {
+  display: inline-block;
   width: 115px;
+}
+.nutrition-item{
+  list-style: none;
+  padding: 8px;
+  margin-bottom: 8px ;
+  border-bottom: 1px solid #E3DDD7
+}
+
+.two{
+  border-bottom: transparent;
+}
+.bold-brown{
+  font-weight: 700;
+  color: #7a284e;
 }
